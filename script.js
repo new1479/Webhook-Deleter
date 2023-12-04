@@ -5,7 +5,6 @@ const btn = document.getElementById("btn");
 let geturl
 
 btn.addEventListener("click", async () => {
-    console.log(output)
     if (!url.value.trim()) return alert("Please enter webhook url.");
     if (!/^https:\/\/discord.com\/api\/webhooks\/([^\/]+)\/([^\/]+)/.test(url.value.trim())) return alert("Please enter valid webhook url.");
 
